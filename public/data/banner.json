@@ -1,0 +1,14 @@
+{
+    "banner": [
+        {
+            "bannerId": 1,
+            "bannerImage": "https://product-image.kurly.com/cdn-cgi/image/quality=85/banner/main/pc/img/f2458b16-5f26-4fd3-be7e-5592484612af.jpg",
+            "description": "배너이미지"
+        },
+        {
+            "bannerId": 2,
+            "bannerImage": "https://product-image.kurly.com/cdn-cgi/image/quality=85/banner/main/pc/img/ce36a9f0-0d64-4354-90c0-6e20a79f7cd5.jpg",
+            "description": "배너이미지"
+        }
+    ]
+}

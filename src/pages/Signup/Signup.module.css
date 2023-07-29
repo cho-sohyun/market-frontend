@@ -1,0 +1,125 @@
+.signup {
+    min-width: 1050px;
+    align-items: center;
+    padding: 50px 0px;
+    background-color: white;
+}
+
+.signupContainer {
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+    margin: 0px auto;
+}
+
+.signupTitle {
+    text-align: center;
+    margin-top: 180px;
+    margin-bottom: 50px;
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: var(--text-color);
+}
+
+.required {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--text-color);
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.requiredSymbol {
+    color: #ee6a7b;
+    margin: 0 2px;
+}
+
+.userFormContainer {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+}
+
+.infoContainer {
+    text-align: left;
+    width: 139px;
+    padding-top: 12px;
+}
+
+.inputContainer {
+    position: relative;
+}
+
+.input {
+    padding: 0 11px 1px 15px;
+    width: 333px;
+    height: 46px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.input:focus {
+    outline: transparent;
+    border: 1px solid #000000;
+}
+
+.signupSubmit {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.submitButton {
+    text-align: center;
+    overflow: hidden;
+    width: 240px;
+    height: 56px;
+    background-color: var(--main-color);
+    color: white;
+    border: 0px none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submitButtonText {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.inputAlertText {
+    display: flex;
+    position: absolute;
+    margin-top: 6px;
+    bottom: -18px;
+    color: #f03f40;
+    font-size: 13px;
+}
+
+.duplicateButton {
+    display: block;
+    text-align: center;
+    margin-left: 8px;
+    padding: 0px 10px;
+    overflow: hidden;
+    width: 120px;
+    height: 44px;
+    background-color: white;
+    border: 1px solid var(--main-color);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.duplicateButtonText {
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 14px;
+}

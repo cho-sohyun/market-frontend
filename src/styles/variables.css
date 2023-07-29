@@ -1,0 +1,13 @@
+:root {
+    --main-color: rgb(95, 0, 128);
+    --sub-color: rgb(109, 86, 115);
+    --specialPrice-color: rgb(189, 118, 255);
+    --subPrimary-color: rgb(109, 86, 115);
+    --point-color: rgb(255, 191, 0);
+    --white-color: rgb(255, 255, 255);
+    --gray-color: rgb(146, 146, 150);
+    --lightgray-color: rgb(208, 208, 208);
+    --text-color: rgb(44, 44, 44);
+    --discount-color: rgb(246, 74, 37);
+    --devide-color: rgb(181, 181, 181);
+}

@@ -1,0 +1,68 @@
+{
+    "itemFilter" : [
+        {
+            "categoryId": 1,
+            "productName": "친환경 꿀고구마 2kg",
+            "thumbnailImage": "https://images.pexels.com/photos/7657310/pexels-photo-7657310.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "description": "무농약 포실포실 달콤한 꿀모구마",
+            "productPrice": "15,200",
+            "retailPrice" : "20,000"
+        },
+        {
+            "categoryId": 2,
+            "productName": "친환경 꿀고구마 2kg",
+            "thumbnailImage": "https://images.pexels.com/photos/7657310/pexels-photo-7657310.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "description": "무농약 포실포실 달콤한 꿀모구마",
+            "productPrice": "15,200",
+            "retailPrice" : "20,000"
+        },
+        {
+            "categoryId": 3,
+            "productName": "친환경 꿀고구마 2kg",
+            "thumbnailImage": "https://images.pexels.com/photos/7657310/pexels-photo-7657310.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "description": "무농약 포실포실 달콤한 꿀모구마",
+            "productPrice": "15,200",
+            "retailPrice" : "20,000"
+        },
+        {
+            "categoryId": 4,
+            "productName": "친환경 꿀고구마 2kg",
+            "thumbnailImage": "https://images.pexels.com/photos/7657310/pexels-photo-7657310.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "description": "무농약 포실포실 달콤한 꿀모구마",
+            "productPrice": "15,200",
+            "retailPrice" : "20,000"
+        },
+        {
+            "categoryId": 5,
+            "productName": "친환경 꿀고구마 2kg",
+            "thumbnailImage": "https://images.pexels.com/photos/7657310/pexels-photo-7657310.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "description": "무농약 포실포실 달콤한 꿀모구마",
+            "productPrice": "15,200",
+            "retailPrice" : "20,000"
+        },
+        {
+            "categoryId": 6,
+            "productName": "친환경 꿀고구마 2kg",
+            "thumbnailImage": "https://images.pexels.com/photos/7657310/pexels-photo-7657310.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "description": "무농약 포실포실 달콤한 꿀모구마",
+            "productPrice": "15,200",
+            "retailPrice" : "20,000"
+        },
+        {
+            "categoryId": 7,
+            "productName": "친환경 꿀고구마 2kg",
+            "thumbnailImage": "https://images.pexels.com/photos/7657310/pexels-photo-7657310.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "description": "무농약 포실포실 달콤한 꿀모구마",
+            "productPrice": "15,200",
+            "retailPrice" : "20,000"
+        },
+        {
+            "categoryId": 8,
+            "productName": "친환경 꿀고구마 2kg",
+            "thumbnailImage": "https://images.pexels.com/photos/7657310/pexels-photo-7657310.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "description": "무농약 포실포실 달콤한 꿀모구마",
+            "productPrice": "15,200",
+            "retailPrice" : "20,000"
+        }
+    ]
+}
