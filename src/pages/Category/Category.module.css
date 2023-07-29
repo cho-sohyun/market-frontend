@@ -54,15 +54,3 @@
     font-weight: bold;
     text-decoration: underline;
 }
-
-.product {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 249px);
-    gap: 31px 18px;
-    width: 100%;
-}
-
-.productImg {
-    width: 249px;
-    height: 320px;
-} 
