@@ -1,10 +1,11 @@
-# market
+# market zero
 
 <br />
 
 ## 🙋🏻‍♀️ 프로젝트 소개
 
 - 소비자에게 건강하고 신뢰를 줄 수 있는 다양한 상품 추천 및 서비스를 제공하는 커머스 입니다.
+
   <br />
 
 ## 👩🏻‍💻 개발 기간
@@ -16,16 +17,23 @@
 ## 💡 기술 스택
 
 - 프론트엔드
+  <br />
   <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
   <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
   <img src="https://img.shields.io/badge/cssmodules-000000?style=for-the-badge&logo=cssmodules&logoColor=white">
   <img src="https://img.shields.io/badge/ReactRouter-CA4245?style=for-the-badge&logo=React-Router&logoColor=white">
   <img src="https://img.shields.io/badge/createreactapp-09D3AC?style=for-the-badge&logo=createreactapp&logoColor=white">
 
+<br />
+
 - 백엔드
+  <br />
   <img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black">
 
+<br />
+
 - 협업
+  <br />
   <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
   <img src="https://img.shields.io/badge/slack-4A154B?style=for-the-badge&logo=slack&logoColor=white">
 
