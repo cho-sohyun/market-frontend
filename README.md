@@ -27,6 +27,8 @@
   <img src="https://img.shields.io/badge/ReactRouter-CA4245?style=for-the-badge&logo=React-Router&logoColor=white">
   <br />
   <img src="https://img.shields.io/badge/createreactapp-09D3AC?style=for-the-badge&logo=createreactapp&logoColor=white">
+  <br />
+  <img src="https://img.shields.io/badge/redux-09D3AC?style=for-the-badge&logo=createreactapp&logoColor=black">
 
 <br />
 
