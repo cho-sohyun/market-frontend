@@ -1,31 +1,31 @@
 {
-    "saleItem" : [
-        {
-            "productId": 1,
-            "productName": "스테이크",
-            "thumbnailImage": "https://images.pexels.com/photos/6542792/pexels-photo-6542792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "description": "스테이크",
-            "productPrice": "20,500",
-            "discountPercent": "52%",
-            "retailPrice" : "42,000"
-        },
-        {
-            "productId": 2,
-            "productName": "소세지 핫도그 3종",
-            "thumbnailImage": "https://images.pexels.com/photos/4518645/pexels-photo-4518645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "description": "소세지 핫도그 3종",
-            "productPrice": "13,000",
-            "discountPercent": "35%",
-            "retailPrice" : "20,000"
-        },
-        {
-            "productId": 3,
-            "productName": "극세모 칫솔",
-            "thumbnailImage": "https://images.pexels.com/photos/4202463/pexels-photo-4202463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "description": "극세모 칫솔",
-            "productPrice": "5,400",
-            "discountPercent": "64%",
-            "retailPrice" : "15,000"
-        }
-    ]
+  "saleItem": [
+    {
+      "productId": 1,
+      "productName": "스테이크",
+      "thumbnailImage": "https://images.pexels.com/photos/6542792/pexels-photo-6542792.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "description": "스테이크",
+      "productPrice": "20,500",
+      "discountPercent": "52%",
+      "retailPrice": "42,000"
+    },
+    {
+      "productId": 2,
+      "productName": "소세지 핫도그 3종",
+      "thumbnailImage": "https://images.pexels.com/photos/4518645/pexels-photo-4518645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "description": "소세지 핫도그 3종",
+      "productPrice": "13,000",
+      "discountPercent": "35%",
+      "retailPrice": "20,000"
+    },
+    {
+      "productId": 3,
+      "productName": "극세모 칫솔",
+      "thumbnailImage": "https://images.pexels.com/photos/4202463/pexels-photo-4202463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "description": "극세모 칫솔",
+      "productPrice": "5,400",
+      "discountPercent": "64%",
+      "retailPrice": "15,000"
+    }
+  ]
 }

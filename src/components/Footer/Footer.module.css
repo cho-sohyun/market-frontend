@@ -1,56 +1,56 @@
 .footer {
-    margin-top: 50px;
-    padding-top: 30px;
-    border-top: 1px solid #f7f7f7;
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid #f7f7f7;
 }
 
 .footerContainer {
-    width: 1050px;
-    margin: 0 auto;
+  width: 1050px;
+  margin: 0 auto;
 }
 
 .footerContents {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
 }
 
 .footerCustomer {
-    padding-bottom: 17px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 29px;
+  padding-bottom: 17px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29px;
 }
 
 .strong {
-    display: block;
-    padding-bottom: 20px;
-    color: var(--text-color);
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 40px;
+  display: block;
+  padding-bottom: 20px;
+  color: var(--text-color);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
 }
 
 .buttonWrapper {
-    margin-bottom: 38px;
+  margin-bottom: 38px;
 }
 
 .footerButton {
-    width: 140px;
-    height: 40px;
-    margin-right: 10px;
-    padding: 0 11px 1px 15px;
-    border: 1px solid var(--lightgray-color);
-    border-radius: 5px;
-    background-color: white;
-    color: var(--text-color);
-    font-size: 14px;
-    font-weight: 400;
-    cursor: pointer;
+  width: 140px;
+  height: 40px;
+  margin-right: 10px;
+  padding: 0 11px 1px 15px;
+  border: 1px solid var(--lightgray-color);
+  border-radius: 5px;
+  background-color: white;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
 }
 
 .mailto {
-    color: var(--lightgray-color);
-    font-size: 12px;
-    font-weight: 500;
+  color: var(--lightgray-color);
+  font-size: 12px;
+  font-weight: 500;
 }

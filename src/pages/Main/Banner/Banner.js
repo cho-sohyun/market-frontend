@@ -1,11 +1,31 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
+import { MdOutlineNavigateBefore, MdOutlineNavigateNext } from 'react-icons/md';
 import styles from './Banner.module.css';
-import { MdOutlineNavigateBefore, MdOutlineNavigateNext } from "react-icons/md";
 
 const Banner = () => {
-  const [slide, setSlide] = useState(0);
   const [bannerList, setBannerList] = useState([]);
-  const slideRef = useRef(null);
+  const swiperRef = useRef(null);
+  const intervalRef = useRef(null);
+
+  const goNext = () => {
+    swiperRef.current.swiper.slideNext();
+  };
+
+  useEffect(() => {
+    intervalRef.current = setInterval(goNext, 3000);
+
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+  }, []);
+
+  const goPrev = () => {
+    swiperRef.current.swiper.slidePrev();
+  };
 
   useEffect(() => {
     const fetchBannerData = async () => {
@@ -23,74 +43,29 @@ const Banner = () => {
     fetchBannerData();
   }, []);
 
-  useEffect(() => {
-    if (bannerList.length > 0) {
-      slideRef.current.style.transition = 'all 0.4s ease-in-out';
-      slideRef.current.style.transform = `translateX(-${slide * 100}%)`;
-    }
-  }, [slide, bannerList]);
-
-  const showNextSlide = () => {
-    if (bannerList.length > 1) {
-      setSlide((slide + 1) % bannerList.length);
-    }
-  };
-
-  const showPrevSlide = () => {
-    if (bannerList.length > 1) {
-      setSlide((slide - 1 + bannerList.length) % bannerList.length);
-    }
-  };
-
   return (
     <div className={styles.bannerCarousel}>
-      <div className={styles.bannerCarouselContainer}>
-        {bannerList.length > 0 && (
-          <div className={styles.bannerList} ref={slideRef}>
-            {/* 무한 슬라이드를 위해 첫 번째 슬라이드를 끝에 추가 */}
-            {bannerList.map((banner) => (
+      <Swiper ref={swiperRef} loop={true}>
+        {bannerList.map((banner) => (
+          <SwiperSlide key={banner.bannerId}>
+            <div className={styles.bannerContainer}>
               <img
                 className={styles.bannerImg}
-                key={banner.bannerId}
                 src={banner.bannerImage}
                 alt="배너이미지"
               />
-            ))}
-            <img
-              className={styles.bannerImg}
-              key={bannerList[0].bannerId}
-              src={bannerList[0].bannerImage}
-              alt="배너이미지"
-            />
-          </div>
-        )}
-      </div>
-
-      {bannerList.length > 1 && (
-        <>
-          {slide !== 0 && (
-            <div className={styles.prevSlide} onClick={showPrevSlide}>
-              <MdOutlineNavigateBefore className={styles.prevIcon} />
             </div>
-          )}
-          {slide + 1 !== bannerList.length * 2 && (
-            <div className={styles.nextSlide} onClick={showNextSlide}>
-              <MdOutlineNavigateNext className={styles.nextIcon} />
-            </div>
-          )}
-        </>
-      )}
+          </SwiperSlide>
+        ))}
+        <div className={styles.nextSlide} onClick={goNext}>
+          <MdOutlineNavigateNext className={styles.nextIcon} />
+        </div>
+        <div className={styles.prevSlide} onClick={goPrev}>
+          <MdOutlineNavigateBefore className={styles.prevIcon} />
+        </div>
+      </Swiper>
     </div>
   );
 };
 
 export default Banner;
-
-
-
-
-
-
-
-
-

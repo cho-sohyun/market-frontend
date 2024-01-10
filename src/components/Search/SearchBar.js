@@ -3,31 +3,30 @@ import styles from './SearchBar.module.css';
 import { BsSearch } from 'react-icons/bs';
 
 const SearchBar = ({ handleSearch, searchKeyword }) => {
-  const [keyword, setKeyword] = useState(searchKeyword = '' );
+  const [keyword, setKeyword] = useState((searchKeyword = ''));
   const [suggestions, setSuggestions] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const inputRef = useRef(null);
 
-  const wholeTextArray = [
-    '친환경 꿀고구마 2kg',
-    '닭가슴살 샐러드',
-    '베이컨말이 꼬치',
-    '초코 브라우니',
-    '실속 바나나 1kg (필리핀)',
-    '무항생제 대란 20구',
-    '프론트엔드',
-    '극세모 칫솔',
-    '소세지 핫도그 3종',
-    '스테이크'
-  ];
-
   useEffect(() => {
+    const wholeTextArray = [
+      '친환경 꿀고구마 2kg',
+      '닭가슴살 샐러드',
+      '베이컨말이 꼬치',
+      '초코 브라우니',
+      '실속 바나나 1kg (필리핀)',
+      '무항생제 대란 20구',
+      '극세모 칫솔',
+      '소세지 핫도그 3종',
+      '스테이크',
+    ];
+
     const updateSuggestions = () => {
       if (keyword === '') {
         setSuggestions([]);
       } else {
         const filteredSuggestions = wholeTextArray.filter((textItem) =>
-          textItem.includes(keyword.toLowerCase())
+          textItem.includes(keyword.toLowerCase()),
         );
         setSuggestions(filteredSuggestions);
       }
@@ -113,40 +112,3 @@ const SearchBar = ({ handleSearch, searchKeyword }) => {
 };
 
 export default SearchBar;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

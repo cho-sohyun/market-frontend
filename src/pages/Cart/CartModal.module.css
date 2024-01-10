@@ -1,59 +1,54 @@
 .modalOverlay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
 }
 
 .modalContent {
-    width: 320px;
-    height: 120px;
-    padding: 24px 24px 0px;
-    line-height: 21px;
-    margin-top: 0px;
-    letter-spacing: 0px;
-    background-color: white;
-    overflow-x: hidden;
-    border-radius: 12px;
-    text-align: left;
-    position: fixed;
-    top: 100px;
-    right: 190px;
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    border: 1px solid var(--lightgray-color);
+  width: 340px;
+  height: 140px;
+  background-color: white;
+  overflow-x: hidden;
+  border-radius: 12px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid var(--lightgray-color);
 }
 
 .modalTitle {
-    font-size: 12px;
-    font-weight: normal;
-    color: var(--text-color);
-    padding-top: 4px;
+  font-size: 14px;
+  color: var(--text-color);
+  text-align: center;
 }
 
 .modalProductName {
-    font-size: 12px;
-    font-weight: normal;
-    color: var(--gray-color);
+  font-size: 12px;
+  font-weight: normal;
+  color: var(--gray-color);
+  text-align: center;
+  padding-top: 16px;
 }
 
 .modalBtn {
-    width: 20px;
-    height: 20px;
-    border: none;
-    font-size: 12px;
-    font-weight: 600;
-    color: rgb(95, 0, 128);
-    background: transparent;
-    border-top: none;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-    cursor: pointer;
-    white-space: nowrap;
-    padding-top: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(95, 0, 128);
+  background: white;
+  cursor: pointer;
+  white-space: nowrap;
+  padding-top: 20px;
+  text-align: center;
 }

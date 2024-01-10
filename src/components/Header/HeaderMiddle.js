@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 import styles from './HeaderMiddle.module.css';
-import { IoLocationOutline } from "react-icons/io5";
-import { VscHeart } from "react-icons/vsc";
+import { IoLocationOutline } from 'react-icons/io5';
+import { VscHeart } from 'react-icons/vsc';
 import { BsCart2 } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
 import SearchBar from '../../components/Search/SearchBar';
@@ -18,7 +18,7 @@ const HeaderMiddle = () => {
   return (
     <div className={styles.headerMiddle}>
       <div className={styles.logoBox}>
-        <p 
+        <p
           className={styles.headerLogoimg}
           onClick={() => {
             navigate(`/`);
@@ -34,17 +34,17 @@ const HeaderMiddle = () => {
       </div>
       <div className={styles.headerIconBox}>
         <IoLocationOutline className={styles.headerIcon} />
-        <VscHeart 
-            className={styles.headerIcon}
-            onClick={() => {
-                navigate(`wishlist`);
-            }} 
+        <VscHeart
+          className={styles.headerIcon}
+          onClick={() => {
+            navigate(`wishlist`);
+          }}
         />
-        <BsCart2 
-            className={styles.headerIcon}
-            onClick={() => {
-                navigate(`cartlist`);
-            }}  
+        <BsCart2
+          className={styles.headerIcon}
+          onClick={() => {
+            navigate(`cartlist`);
+          }}
         />
       </div>
     </div>

@@ -1,127 +1,126 @@
 .categoryList {
-    position: relative;
-    margin-top: 200px;
-    margin-bottom: 80px;
+  position: relative;
+  margin-bottom: 80px;
 }
 
 .categoryListContainer {
-    display: flex;
-    flex-direction: column;
-    width: 1050px;
-    margin: 0px auto;
-    opacity: 1;
+  display: flex;
+  flex-direction: column;
+  width: 1050px;
+  margin: 0px auto;
+  opacity: 1;
 }
 
 .mainCategoryTitle {
-    margin-top: 50px;
-    font-weight: 500;
-    font-size: 28px;
-    color: rgb(51, 51, 51);
-    line-height: 35px;
-    letter-spacing: -1px;
-    text-align: center;
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 28px;
+  color: rgb(51, 51, 51);
+  line-height: 35px;
+  letter-spacing: -1px;
+  text-align: center;
 }
 
 .subCategoryContainer {
-    display: grid;
-    grid-template-columns: repeat(4, 180px);
-    gap: 16px 83px;
-    overflow: hidden;
-    margin-top: 28px;
-    padding: 30px 40px;
-    border: 1px solid rgb(226, 226, 226);
-    line-height: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 180px);
+  gap: 16px 83px;
+  overflow: hidden;
+  margin-top: 28px;
+  padding: 30px 40px;
+  border: 1px solid rgb(226, 226, 226);
+  line-height: 20px;
 }
 
 .subCategory {
-    white-space: nowrap;
-    font-size: 14px;
-    cursor: pointer;
+  white-space: nowrap;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .subCategory:hover {
-    color: var(--main-color);
-    font-weight: bold;
+  color: var(--main-color);
+  font-weight: bold;
 }
 
 .productFilterContainer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 20px;
 }
 
 .filteredName {
-    margin-left: 10px;
-    cursor: pointer;
-    font-size: 14px;
-    letter-spacing: -0.3px;
-    color: rgb(153, 153, 153);
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: rgb(153, 153, 153);
 }
 
 .filteredNameRecommend {
-    font-weight: 500;
-    color: rgb(51, 51, 51);
-    font-size: 14px;
+  font-weight: 500;
+  color: rgb(51, 51, 51);
+  font-size: 14px;
 }
 
 .productContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 249px);
-    gap: 31px 18px;
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 249px);
+  gap: 31px 18px;
+  width: 100%;
 }
 
 .productList {
-    display: flex;
-    flex-direction: column;
-    height: 538px;
-    color: rgb(51, 51, 51);
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  color: rgb(51, 51, 51);
+  cursor: pointer;
 }
 
 .productImg {
-    width: 249px;
-    height: 320px;
-    margin-bottom: 10px;
+  width: 249px;
+  height: 320px;
+  margin-bottom: 10px;
 }
 
 .productName {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: normal;
-    overflow: hidden;
-    white-space: normal;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: normal;
+  overflow: hidden;
+  white-space: normal;
 }
 
 .productDes {
-    padding-top: 4px;
-    font-size: 12px;
-    color: rgb(153, 153, 153);
-    line-height: 18px;
-    letter-spacing: normal;
-    overflow: hidden;
-    word-break: break-all;
-    white-space: normal;
+  padding-top: 4px;
+  font-size: 12px;
+  color: rgb(153, 153, 153);
+  line-height: 18px;
+  letter-spacing: normal;
+  overflow: hidden;
+  word-break: break-all;
+  white-space: normal;
 }
 
 .productPrice {
-    padding-top: 4px;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 24px;
-    white-space: nowrap;
-    letter-spacing: -0.5px;
+  padding-top: 4px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  white-space: nowrap;
+  letter-spacing: -0.5px;
 }
 
 .filteredNameSelected {
-    margin-left: 10px;
-    cursor: pointer;
-    font-size: 14px;
-    letter-spacing: -0.3px;
-    color: rgb(51, 51, 51);
-    font-weight: 600;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: -0.3px;
+  color: rgb(51, 51, 51);
+  font-weight: 600;
 }

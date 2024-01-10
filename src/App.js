@@ -13,9 +13,11 @@ import WishList from './pages/WishList/WishList';
 import CartPage from './pages/Cart/CartPage';
 import CategoryList from './pages/CategoryList/CategoryList';
 import Footer from './components/Footer/Footer';
+import NewSection from './pages/NewSection/NewSection';
+import ScrollTopBtn from '../src/components/ScrollTopBtn/ScrollTopBtn';
 
 function App() {
-  const [searchKeyword, setSearchKeyword] = useState('');
+  const [searchKeyword] = useState('');
   const [wishList, setWishList] = useState([]);
   const [cartList, setCartList] = useState([]);
 
@@ -24,7 +26,10 @@ function App() {
   };
 
   const addToCart = (newItem) => {
-    setCartList((prevCartList) => [...prevCartList, { ...newItem, quantity: 1 }]);
+    setCartList((prevCartList) => [
+      ...prevCartList,
+      { ...newItem, quantity: 1 },
+    ]);
   };
 
   return (
@@ -34,12 +39,25 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/search" element={<SearchList searchKeyword={searchKeyword} />} />
-        <Route path="/product/:productId" element={<ProductDetail addToWishList={addToWishList} addToCart={addToCart} />} />
+        <Route path="/new" element={<NewSection />} />
+        <Route
+          path="/search"
+          element={<SearchList searchKeyword={searchKeyword} />}
+        />
+        <Route
+          path="/product/:productId"
+          element={
+            <ProductDetail
+              addToWishList={addToWishList}
+              addToCart={addToCart}
+            />
+          }
+        />
         <Route path="/wishlist" element={<WishList wishList={wishList} />} />
         <Route path="/cartlist" element={<CartPage cartItems={cartList} />} />
         <Route path="/list/:mainCategoryId" element={<CategoryList />} />
       </Routes>
+      <ScrollTopBtn />
       <Footer />
     </BrowserRouter>
   );

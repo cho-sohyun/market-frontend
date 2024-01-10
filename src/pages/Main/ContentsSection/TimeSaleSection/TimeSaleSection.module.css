@@ -1,98 +1,98 @@
 .timeSaleSection {
-    width: 1050px;
-    margin: 0px auto;
-    margin-top: 24px;
-    display: flex;
-    justify-content: space-between;
-    padding: 80px 0px;
+  width: 1050px;
+  margin: 0px auto;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0px;
 }
 
-.titmeSale {    
-    width: 249px;
+.titmeSale {
+  width: 249px;
 }
 
 .timeSaleTitle {
-    padding-top: 1px;
-    font-size: 28px;
-    color: rgb(51, 51, 51);
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: -0.26px;
+  padding-top: 1px;
+  font-size: 28px;
+  color: rgb(51, 51, 51);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.26px;
 }
 
 .timeSaleSubTitle {
-    padding-top: 11px;
-    font-size: 16px;
-    color: rgb(153, 153, 153);
-    font-weight: normal;
-    line-height: 1.3;
-    letter-spacing: normal;
-    margin-bottom: 28px;
+  padding-top: 11px;
+  font-size: 16px;
+  color: rgb(153, 153, 153);
+  font-weight: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  margin-bottom: 28px;
 }
 
 .timeSalelightTitle {
-    font-size: 14px;
-    color: rgb(204, 204, 204);
-    font-weight: normal;
-    line-height: 1.43;
-    letter-spacing: -0.4px;
-    margin-top: 26px;
+  font-size: 14px;
+  color: rgb(204, 204, 204);
+  font-weight: normal;
+  line-height: 1.43;
+  letter-spacing: -0.4px;
+  margin-top: 26px;
 }
 
 .timer {
-    font-size: 36px;
-    font-weight: 800;
-    color: rgb(51, 51, 51);
-    line-height: 1.43;
-    letter-spacing: -0.4px;
+  font-size: 36px;
+  font-weight: 800;
+  color: rgb(51, 51, 51);
+  line-height: 1.43;
+  letter-spacing: -0.4px;
 }
 
 .saleProducts {
-    display: flex;
-    gap: 18px;
+  display: flex;
+  gap: 18px;
 }
 
 .saleProductItem {
-    height: 320px;
-    position: relative;
-    cursor: pointer;
+  height: 320px;
+  position: relative;
+  cursor: pointer;
 }
 
 .saleProductImage {
-    width: 249px;
-    height: 320px;
+  width: 249px;
+  height: 320px;
 }
 
 .saleProductName {
-    font-size: 16px;
-    line-height: 1.45;
-    color: rgb(51, 51, 51);
-    font-weight: 400;
-    margin-top: 10px;
-    margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.45;
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 8px;
 }
 
 .saleProductPrice {
-    font-size: 16px;
-    line-height: 24px;
-    padding-right: 6px;
-    font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  padding-right: 6px;
+  font-weight: 800;
 }
 
 .productRetailPrice {
-    padding-top: 1px;
-    color: rgb(181, 181, 181);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    text-decoration: line-through;
+  padding-top: 1px;
+  color: rgb(181, 181, 181);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: line-through;
 }
 
 .discountPercent {
-    margin-right: 7px;
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 1.5;
-    white-space: nowrap;
-    color: rgb(250, 98, 47);
-  }
+  margin-right: 7px;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.5;
+  white-space: nowrap;
+  color: rgb(250, 98, 47);
+}

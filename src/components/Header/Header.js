@@ -5,13 +5,13 @@ import HeaderMiddle from './HeaderMiddle';
 import HeaderBottom from './HeaderBottom';
 
 const Header = () => {
-    return (
-        <div className={styles.headerContainer}>
-            <HeaderTop />
-            <HeaderMiddle />
-            <HeaderBottom />
-        </div>
-    );
+  return (
+    <div className={styles.headerContainer}>
+      <HeaderTop />
+      <HeaderMiddle />
+      <HeaderBottom />
+    </div>
+  );
 };
 
 export default Header;

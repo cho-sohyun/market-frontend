@@ -1,0 +1,20 @@
+.scrollTopBtn {
+  position: fixed;
+  top: 90%;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid lightgray;
+  border-radius: 100%;
+  color: black;
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.scrollTopIcon {
+  width: 24px;
+  height: 24px;
+}

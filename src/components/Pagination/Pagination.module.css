@@ -1,43 +1,29 @@
 .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
 }
 
-.currentPage {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 34px;
-    height: 34px;
-    border-top: 1px solid rgb(221, 221, 221);
-    border-right: 1px solid rgb(221, 221, 221);
-    border-bottom: 1px solid rgb(221, 221, 221);
-    border-left: 1px solid rgb(221, 221, 221);
-    border-image: initial;
-    cursor: pointer;
-    font-size: 14px;
-}
-
+.currentPage,
 .pageNumber {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 34px;
-    height: 34px;
-    border-top: 1px solid rgb(221, 221, 221);
-    border-right: 1px solid rgb(221, 221, 221);
-    border-bottom: 1px solid rgb(221, 221, 221);
-    border-left: none;
-    border-image: initial;
-    cursor: pointer;
-    font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-top: 1px solid rgb(221, 221, 221);
+  border-right: 1px solid rgb(221, 221, 221);
+  border-bottom: 1px solid rgb(221, 221, 221);
+  border-left: 1px solid rgb(221, 221, 221);
+  border-image: initial;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 .currentPage:hover,
 .pageNumber:hover {
-    background-color: rgb(221, 221, 221);
-    color: var(--main-color);
-    font-weight: 600;
+  background-color: rgb(221, 221, 221);
+  color: var(--main-color);
+  font-weight: 600;
 }

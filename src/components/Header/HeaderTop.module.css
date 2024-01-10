@@ -1,48 +1,48 @@
 .headerTop {
-    width: 1050px;
-    height: 35px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  width: 1050px;
+  height: 35px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .signUpText {
-    width: 60px;
-    color: var(--main-color);
-    font-size: 12px;
-    text-align: center;
-    cursor: pointer;
+  width: 60px;
+  color: var(--main-color);
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .loginText {
-    width: 60px;
-    font-size: 12px;
-    text-align: center;
-    cursor: pointer;
-    border-right: 1px solid var(--lightgray-color);
-    border-left: 1px solid var(--lightgray-color);
+  width: 60px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  border-right: 1px solid var(--lightgray-color);
+  border-left: 1px solid var(--lightgray-color);
 }
 
 .csCenterText {
-    width: 60px;
-    font-size: 12px;
-    text-align: center;
-    cursor: pointer;
+  width: 60px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .memberName {
-    width: 60px;
-    border-right: 1px solid var(--lightgray-color);
-    font-size: 12px;
-    text-align: center;
-    cursor: pointer;
+  width: 60px;
+  border-right: 1px solid var(--lightgray-color);
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .logoutText {
-    width: 60px;
-    border-right: 1px solid var(--lightgray-color);
-    font-size: 12px;
-    text-align: center;
-    cursor: pointer;
+  width: 60px;
+  border-right: 1px solid var(--lightgray-color);
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
 }

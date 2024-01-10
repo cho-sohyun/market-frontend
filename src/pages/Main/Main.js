@@ -6,14 +6,14 @@ import MainBanner from './Banner/MainBanner';
 import HotProducts from './ContentsSection/RecommendSection/HotProducts';
 
 const Main = () => {
-    return (
-        <div className={styles.main}>
-            <MainBanner />
-            <RecommendSection />
-            <TimeSaleSection />
-            <HotProducts />
-        </div>
-    )
+  return (
+    <div className={styles.main}>
+      <MainBanner />
+      <RecommendSection />
+      <TimeSaleSection />
+      <HotProducts />
+    </div>
+  );
 };
 
 export default Main;

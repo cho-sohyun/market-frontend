@@ -3,120 +3,83 @@ import { useNavigate } from 'react-router-dom';
 import styles from './Category.module.css';
 
 const Category = ({ setOpenCategory }) => {
-    const [categories, setCategories] = useState([]);
-    const [categoryId, setCategoryId] = useState(null);
-    const navigate = useNavigate();
+  const [categories, setCategories] = useState([]);
+  const [categoryId, setCategoryId] = useState(null);
+  const navigate = useNavigate();
 
-    useEffect(() => {
-        const categoryData = [
-            {
-                "mainCategoriesId": 1,
-                "mainCategoriesName": "채소",
-                "subCategory": [
-                    { "subCategoriesId": 1, "subCategoriesName": "친환경" },
-                    { "subCategoriesId": 2, "subCategoriesName": "고구마・감자・당근" },
-                    { "subCategoriesId": 3, "subCategoriesName": "시금치・쌈채소・나물" },
-                    { "subCategoriesId": 4, "subCategoriesName": "브로콜리・파프리카・양배추" },
-                    { "subCategoriesId": 5, "subCategoriesName": "양파・대파・마늘・배추" },
-                    { "subCategoriesId": 6, "subCategoriesName": "오이・호박・고추" },
-                    { "subCategoriesId": 7, "subCategoriesName": "냉동・이색・간편채소" },
-                    { "subCategoriesId": 8, "subCategoriesName": "콩나물・버섯" }
-                ]
-            },
-            {
-                "mainCategoriesId": 2,
-                "mainCategoriesName": "샐러드・간편식",
-                "subCategory": [
-                    { "subCategoriesId": 1, "subCategoriesName": "샐러드・간편식" },
-                    { "subCategoriesId": 2, "subCategoriesName": "도시락・밥류" },
-                    { "subCategoriesId": 3, "subCategoriesName": "파스타・면류" }
-                ]
-            },
-            {
-                "mainCategoriesId": 3,
-                "mainCategoriesName": "정육・계란",
-                "subCategory": [
-                    { "subCategoriesId": 1, "subCategoriesName": "계란류" },
-                    { "subCategoriesId": 2, "subCategoriesName": "국내산 소고기" },
-                    { "subCategoriesId": 3, "subCategoriesName": "수입산 소고기" },
-                    { "subCategoriesId": 4, "subCategoriesName": "돼지고기" },
-                    { "subCategoriesId": 5, "subCategoriesName": "닭・오리고기" }
-                ]
-            },
-            {
-                "mainCategoriesId": 4,
-                "mainCategoriesName": "국・반찬・메인요리",
-                "subCategory": [
-                  { "subCategoriesId": 1, "subCategoriesName": "국・탕・찌개" },
-                  { "subCategoriesId": 2, "subCategoriesName": "밀키트・메인요리"},
-                  { "subCategoriesId": 3, "subCategoriesName": "밑반찬" },
-                  { "subCategoriesId": 4, "subCategoriesName": "베이컨・햄・통조림" }
-                ]
-            },
-            {
-                "mainCategoriesId": 5,
-                "mainCategoriesName": "간식・과자・떡",
-                "subCategory": [
-                    { "subCategoriesId": 1, "subCategoriesName": "과자・스낵・쿠키" },
-                    { "subCategoriesId": 2, "subCategoriesName": "초콜릿・젤리" },
-                    { "subCategoriesId": 3, "subCategoriesName": "아이스크림" }
-                ]
-            }
-        ];
+  useEffect(() => {
+    fetch('/data/category.json')
+      .then((response) => response.json())
+      .then((data) => setCategories(data))
+      .catch((error) => console.error('Error', error));
+  }, []);
 
-        setCategories(categoryData);
-    }, []);
+  useEffect(() => {
+    if (categoryId !== null) {
+      const subCategoryElement = document.getElementById(
+        `subCategory-${categoryId}`,
+      );
+      if (subCategoryElement) {
+        subCategoryElement.style.display = 'block';
+      }
+    } else {
+      const subCategoryElements = document.querySelectorAll(
+        '[id^="subCategory-"]',
+      );
+      subCategoryElements.forEach((element) => {
+        element.style.display = 'none';
+      });
+    }
+  }, [categoryId]);
 
-    const findSubCategory = (id) => {
-        const subCategory = categories.find(
-            (category) => +category.mainCategoriesId === +id
-        );
-
-        return subCategory?.subCategory || [];
-    };
-
-    return (
-        <div
-            className={styles.categoryContainer}
-            onMouseLeave={() => setOpenCategory(false)}
-        >
-            <div className={styles.mainCategory}>
-                {categories.map(category => {
-                    return (
-                        <li
-                            key={category.mainCategoriesId}
-                            id={category.mainCategoriesId}
-                            className={styles.mainCategoryName}
-                            onMouseEnter={() => {
-                                setCategoryId(category.mainCategoriesId);
-                            }}
-                            onClick={() => {
-                                navigate(`/list/${category.mainCategoriesId}`);
-                            }}
-                        >
-                            {category.mainCategoriesName}
-                        </li>
-                    );
-                })}
-            </div>
-            <div className={styles.subCategory} onMouseLeave={() => setCategoryId(0)}>
-                {findSubCategory(categoryId)?.map(category => {
-                    return (
-                        <li
-                            key={category.subCategoriesId}
-                            id={category.subCategoriesId}
-                            className={styles.subCategoryName}
-                            onClick={() => {
-                                navigate(`/list/sub/${category.subCategoriesId}`);
-                            }}
-                        >
-                            {category.subCategoriesName}
-                        </li>
-                    );
-                })}
-            </div>
-        </div>
+  const findSubCategory = (id) => {
+    const subCategory = categories.find(
+      (category) => +category.mainCategoriesId === +id,
     );
+
+    return subCategory?.subCategory || [];
+  };
+
+  return (
+    <div
+      className={styles.categoryContainer}
+      onMouseLeave={() => setOpenCategory(false)}
+    >
+      <div className={styles.mainCategory}>
+        {categories.map((category) => (
+          <li
+            key={category.mainCategoriesId}
+            id={category.mainCategoriesId}
+            className={styles.mainCategoryName}
+            onMouseEnter={() => setCategoryId(category.mainCategoriesId)}
+            onClick={() => {
+              navigate(`/list/${category.mainCategoriesId}`);
+            }}
+          >
+            {category.mainCategoriesName}
+          </li>
+        ))}
+      </div>
+      <div
+        id={`subCategory-${categoryId}`}
+        className={styles.subCategory}
+        onMouseLeave={() => setCategoryId(null)}
+      >
+        {findSubCategory(categoryId)?.map((category) => (
+          <span
+            key={category.subCategoriesId}
+            id={category.subCategoriesId}
+            className={styles.subCategoryName}
+            onClick={() => {
+              navigate(`/list/sub/${category.subCategoriesId}`);
+            }}
+          >
+            {category.subCategoriesName}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Category;
