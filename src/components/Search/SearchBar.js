@@ -41,14 +41,6 @@ const SearchBar = () => {
     }
   };
 
-  const handleSelectSuggestion = (suggestion) => {
-    setKeyword(suggestion);
-    if (suggestion.trim() !== '') {
-      navigate(`/search?keyword=${encodeURIComponent(suggestion)}`);
-      setShowModal(false);
-    }
-  };
-
   const handleKeyPress = (e) => {
     if (e.key === 'Enter' && keyword.trim() !== '') {
       navigate(`/search?keyword=${encodeURIComponent(keyword)}`);
@@ -92,11 +84,7 @@ const SearchBar = () => {
         <div className={styles.modal}>
           {suggestions.length > 0 ? (
             suggestions.map((suggestion, index) => (
-              <div
-                key={index}
-                className={styles.suggestion}
-                onClick={() => handleSelectSuggestion(suggestion)}
-              >
+              <div key={index} className={styles.suggestion}>
                 <p>{suggestion}</p>
               </div>
             ))
