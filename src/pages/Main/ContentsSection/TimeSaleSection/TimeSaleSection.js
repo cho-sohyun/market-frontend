@@ -70,7 +70,6 @@ const TimeSaleSection = () => {
             <Link
               to={`/product/${product.productId}`}
               style={{ textDecoration: 'none' }}
-              key={product.productId}
             >
               <img
                 className={styles.saleProductImage}

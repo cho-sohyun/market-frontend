@@ -112,30 +112,53 @@
     },
     {
       "productId": 10,
-      "productName": "친환경 꿀고구마 2kg",
-      "thumbnailImage": "https://images.pexels.com/photos/7657310/pexels-photo-7657310.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "description": "무농약 포실포실 달콤한 꿀모구마",
-      "productPrice": "15,200",
-      "discountPercent": "10%",
-      "retailPrice": "20,000"
+      "productName": "다다기 오이 3입",
+      "thumbnailImage": "https://images.pexels.com/photos/2329440/pexels-photo-2329440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "description": "다다기 오이",
+      "shortDescription": "믿고 먹을 수 있는 상품을 합리적인 가격에",
+      "productPrice": "4,990"
     },
     {
       "productId": 11,
-      "productName": "친환경 꿀고구마 2kg",
-      "thumbnailImage": "https://images.pexels.com/photos/7657310/pexels-photo-7657310.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "description": "무농약 포실포실 달콤한 꿀모구마",
-      "productPrice": "15,200",
-      "discountPercent": "10%",
-      "retailPrice": "20,000"
+      "productName": "친환경 감자 600g",
+      "thumbnailImage": "https://images.pexels.com/photos/2286776/pexels-photo-2286776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "shortDescription": "어떤 음식을 해도 잘 어울리는 무농약 감자",
+      "productPrice": "3,170"
     },
     {
       "productId": 12,
-      "productName": "친환경 꿀고구마 2kg",
-      "thumbnailImage": "https://images.pexels.com/photos/7657310/pexels-photo-7657310.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "description": "무농약 포실포실 달콤한 꿀모구마",
-      "productPrice": "15,200",
-      "discountPercent": "10%",
-      "retailPrice": "20,000"
+      "productName": "친환경 양파 500g",
+      "thumbnailImage": "https://images.pexels.com/photos/4197445/pexels-photo-4197445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "shortDescription": "믿고 먹을 수 있는 상품을 합리적인 가격에",
+      "productPrice": "2,990"
+    },
+    {
+      "productId": 13,
+      "productName": "한통 양배추",
+      "thumbnailImage": "https://images.pexels.com/photos/6316537/pexels-photo-6316537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "shortDescription": "아삭한 잎에 깃든 달콤함",
+      "productPrice": "4,980"
+    },
+    {
+      "productId": 14,
+      "productName": "파프리카 2입",
+      "thumbnailImage": "https://images.pexels.com/photos/7657029/pexels-photo-7657029.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "shortDescription": "믿고 먹을 수 있는 상품을 합리적인 가격에, KF365",
+      "productPrice": "2,990"
+    },
+    {
+      "productId": 15,
+      "productName": "파프리카 2입",
+      "thumbnailImage": "https://images.pexels.com/photos/7657029/pexels-photo-7657029.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "shortDescription": "믿고 먹을 수 있는 상품을 합리적인 가격에, KF365",
+      "productPrice": "2,990"
+    },
+    {
+      "productId": 16,
+      "productName": "파프리카 2입",
+      "thumbnailImage": "https://images.pexels.com/photos/7657029/pexels-photo-7657029.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "shortDescription": "믿고 먹을 수 있는 상품을 합리적인 가격에, KF365",
+      "productPrice": "2,990"
     }
   ]
 }

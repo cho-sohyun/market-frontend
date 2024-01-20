@@ -144,7 +144,10 @@ const CategoryList = () => {
         <div className={styles.productContainer}>
           {currentItems.map((product) => (
             <div className={styles.productList} key={product.productId}>
-              <Link to={`/product/${product.productId}`}>
+              <Link
+                to={`/product/${product.productId}`}
+                style={{ textDecoration: 'none' }}
+              >
                 <div className={styles.product}>
                   <img
                     className={styles.productImg}
