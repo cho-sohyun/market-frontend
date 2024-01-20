@@ -1,5 +1,7 @@
 # market zero
-
+- notion : https://www.notion.so/2-4-381d1ce6b802488caa07380607163e36
+- vercel : https://marketzero-frontend.vercel.app/
+  
 <br />
 
 ## 🙋🏻‍♀️ 프로젝트 소개
