@@ -6,7 +6,7 @@ import { BsCart2 } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
 import SearchBar from '../../components/Search/SearchBar';
 
-const HeaderMiddle = ({ setSearchKeyword }) => {
+const HeaderMiddle = () => {
   const navigate = useNavigate();
 
   return (

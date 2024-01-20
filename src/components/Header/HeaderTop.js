@@ -32,7 +32,7 @@ const HeaderTop = () => {
     try {
       const auth = getAuth();
       await signOut(auth);
-      navigate(`/`);
+      navigate('/');
     } catch (error) {
       console.error(error);
     }
