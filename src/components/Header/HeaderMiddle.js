@@ -6,14 +6,8 @@ import { BsCart2 } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
 import SearchBar from '../../components/Search/SearchBar';
 
-const HeaderMiddle = () => {
+const HeaderMiddle = ({ setSearchKeyword }) => {
   const navigate = useNavigate();
-
-  const handleSearch = (keyword) => {
-    if (keyword.trim() !== '') {
-      navigate(`/search?keyword=${encodeURIComponent(keyword)}`);
-    }
-  };
 
   return (
     <div className={styles.headerMiddle}>
@@ -30,7 +24,7 @@ const HeaderMiddle = () => {
         <p className={styles.headerBeautyText}>뷰티제로</p>
       </div>
       <div className={styles.headerSearch}>
-        <SearchBar handleSearch={handleSearch} />
+        <SearchBar />
       </div>
       <div className={styles.headerIconBox}>
         <IoLocationOutline className={styles.headerIcon} />

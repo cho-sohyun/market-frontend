@@ -1,38 +1,32 @@
 import React, { useState, useEffect, useRef } from 'react';
 import styles from './SearchBar.module.css';
 import { BsSearch } from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom';
 
-const SearchBar = ({ handleSearch, searchKeyword }) => {
-  const [keyword, setKeyword] = useState((searchKeyword = ''));
+const SearchBar = () => {
+  const [keyword, setKeyword] = useState('');
   const [suggestions, setSuggestions] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const inputRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const wholeTextArray = [
-      '친환경 꿀고구마 2kg',
-      '닭가슴살 샐러드',
-      '베이컨말이 꼬치',
-      '초코 브라우니',
-      '실속 바나나 1kg (필리핀)',
-      '무항생제 대란 20구',
-      '극세모 칫솔',
-      '소세지 핫도그 3종',
-      '스테이크',
-    ];
-
-    const updateSuggestions = () => {
-      if (keyword === '') {
-        setSuggestions([]);
-      } else {
-        const filteredSuggestions = wholeTextArray.filter((textItem) =>
-          textItem.includes(keyword.toLowerCase()),
-        );
+    const fetchProductData = async () => {
+      try {
+        const response = await fetch('/data/products.json');
+        const data = await response.json();
+        const filteredSuggestions = data.allProducts
+          .filter((product) =>
+            product.productName.includes(keyword.toLowerCase()),
+          )
+          .map((product) => product.productName);
         setSuggestions(filteredSuggestions);
+      } catch (error) {
+        console.error(error);
       }
     };
 
-    updateSuggestions();
+    fetchProductData();
   }, [keyword]);
 
   const handleChange = (event) => {
@@ -41,19 +35,23 @@ const SearchBar = ({ handleSearch, searchKeyword }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    handleSearch(keyword);
-    setShowModal(false);
+    if (keyword.trim() !== '') {
+      navigate(`/search?keyword=${encodeURIComponent(keyword)}`);
+      setShowModal(false);
+    }
   };
 
   const handleSelectSuggestion = (suggestion) => {
     setKeyword(suggestion);
-    setShowModal(false);
-    handleSearch(suggestion);
+    if (suggestion.trim() !== '') {
+      navigate(`/search?keyword=${encodeURIComponent(suggestion)}`);
+      setShowModal(false);
+    }
   };
 
   const handleKeyPress = (e) => {
-    if (e.key === 'Enter') {
-      handleSearch(keyword);
+    if (e.key === 'Enter' && keyword.trim() !== '') {
+      navigate(`/search?keyword=${encodeURIComponent(keyword)}`);
       setShowModal(false);
     }
   };

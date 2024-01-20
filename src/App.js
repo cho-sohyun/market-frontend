@@ -17,7 +17,6 @@ import NewSection from './pages/NewSection/NewSection';
 import ScrollTopBtn from '../src/components/ScrollTopBtn/ScrollTopBtn';
 
 function App() {
-  const [searchKeyword] = useState('');
   const [wishList, setWishList] = useState([]);
   const [cartList, setCartList] = useState([]);
 
@@ -40,10 +39,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/new" element={<NewSection />} />
-        <Route
-          path="/search"
-          element={<SearchList searchKeyword={searchKeyword} />}
-        />
+        <Route path="/search" element={<SearchList />} />
         <Route
           path="/product/:productId"
           element={

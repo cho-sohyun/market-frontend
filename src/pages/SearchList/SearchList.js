@@ -2,14 +2,17 @@ import React, { useState, useEffect } from 'react';
 import styles from './SearchList.module.css';
 import Sort from '../Sort/Sort';
 import Pagination from '../../components/Pagination/Pagination';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-const SearchList = ({ searchKeyword = '' }) => {
+const SearchList = () => {
   const [allProducts, setAllProducts] = useState([]);
   const [searchResult, setSearchResult] = useState([]);
   const [selectedFilter, setSelectedFilter] = useState('추천순');
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
+  const location = useLocation();
+  const searchKeyword =
+    new URLSearchParams(location.search).get('keyword') || '';
 
   useEffect(() => {
     const fetchData = async () => {
