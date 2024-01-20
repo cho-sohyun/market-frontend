@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './TimeSaleSection.module.css';
+import { Link } from 'react-router-dom';
 
 const TimeSaleSection = () => {
   const [item, setItem] = useState([]);
@@ -66,15 +67,27 @@ const TimeSaleSection = () => {
       <div className={styles.saleProducts}>
         {item.map((product) => (
           <div className={styles.saleProductItem} key={product.productId}>
-            <img
-              className={styles.saleProductImage}
-              src={product.thumbnailImage}
-              alt={product.productName}
-            />
-            <p className={styles.saleProductName}>{product.productName}</p>
-            <p className={styles.discountPercent}>{product.discountPercent}</p>
-            <p className={styles.saleProductPrice}>{product.productPrice}원</p>
-            <p className={styles.productRetailPrice}>{product.retailPrice}원</p>
+            <Link
+              to={`/product/${product.productId}`}
+              style={{ textDecoration: 'none' }}
+              key={product.productId}
+            >
+              <img
+                className={styles.saleProductImage}
+                src={product.thumbnailImage}
+                alt={product.productName}
+              />
+              <p className={styles.saleProductName}>{product.productName}</p>
+              <p className={styles.discountPercent}>
+                {product.discountPercent}
+              </p>
+              <p className={styles.saleProductPrice}>
+                {product.productPrice}원
+              </p>
+              <p className={styles.productRetailPrice}>
+                {product.retailPrice}원
+              </p>
+            </Link>
           </div>
         ))}
       </div>
