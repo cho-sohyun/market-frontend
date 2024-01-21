@@ -19,7 +19,6 @@ const SearchList = () => {
       try {
         const response = await fetch('/data/products.json');
         const data = await response.json();
-        console.log('Data from JSON', data);
         setAllProducts(data.allProducts);
       } catch (error) {
         console.error(error);
@@ -41,7 +40,6 @@ const SearchList = () => {
     }
 
     setSearchResult(filteredProducts);
-    console.log(filteredProducts);
     setCurrentPage(1); // 검색 키워드가 변경되면 첫 번째 페이지로 리셋
   }, [searchKeyword, allProducts]);
 
