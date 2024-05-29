@@ -34,7 +34,7 @@
 
 <br />
 
-- 백엔드
+- 사용자 인증 및 로그인
   <br />
   <img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black">
 
