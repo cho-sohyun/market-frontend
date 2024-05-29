@@ -7,7 +7,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { addItem as addCartItem } from '../../store/cartSlice';
 import { addItem as addWishItem } from '../../store/wishSlice';
 
-const ProductDetail = ({ addToWishList, addToCart }) => {
+const ProductDetail = () => {
   const { productId } = useParams();
   const [productDetail, setProductDetail] = useState(null);
   const [quantity, setQuantity] = useState(1);
